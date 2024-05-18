@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+#body{
+    background-image: url('/images/bg-intro-desktop.png');
+    background-color:  #ff7a7a;
+}
+input{
+    outline: none;
+}
+.head{
+    border:2px solid red !important;
+
+}
+.error{
+    float:right;
+    color:green !important;    
+}
+.heads{
+    border: 2px solid green !important;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Intro component with signup form master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex  flex-col mt-[75px] sm:flex-row justify-center h-screen items-center" id="body">
+    <div class="flex flex-col" >
+        <p class="text-5xl text-white font-bold w-[350px]">Learn to code by watching others</p>
+        <p class="text-white text-xs leading-5 mt-3 w-[250px]">see how experienced developers solva problems in real-time.Watching scripted tutorials is great.but understanding how developers think is invaluable</p>
+    </div>
+    <div class="">
+        <p class="text-white text-center text-xs bg-[#6055a5]  p-3 rounded-lg my-3"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        <form class="flex flex-col p-[25px] bg-white rounded-lg">
+            <div class="my-3">
+                <div class="flex flex-row items-center border border-gray-400 border-2 px-3 py-1" id="heading">
+                    <input type="text" placeholder="First Name" class="p-1 flex-1 "  id="Fname" value="" required>
+                    <img src="/images/icon-error.svg" alt="" class="w-[20px] h-[20px]" id="imageFname">
+                </div>
+                <p id="nameError" class="text-xs text-red-500"></p>
+            </div>
+            <div class="my-3">
+                <div class="flex items-center border border-gray-400 border-2 px-3 py-1" id="heading1">
+                    <input type="text" placeholder="Last Name" class="p-1 flex-1"  id="Lname" value="" required>
+
+                    <img src="/images/icon-error.svg" alt="" class="w-[20px] h-[20px]" id="imageLname">
+                </div>
+                <div>
+                    <p id="lastNameError" class="text-xs text-red-500"></p>
+                </div>
+            </div>
+            <div class="my-3">
+                <div class="flex items-center border border-gray-400 border-2 px-3 py-1" id="heading2">
+                    <input type="email" placeholder="Email Address" class="p-1  rounded-md flex-1"  id="Address"  value="" required>
+                    <img src="/images/icon-error.svg" alt="" class="w-[20px] h-[20px]" id="imageAddress">
+                </div>
+                <div>
+                    <p id="emailAddressError" class="text-xs text-red-500"></p>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center border border-gray-400 border-2 px-3 py-1" id="heading3">
+                    <input type="password" placeholder="Password" class="p-1 flex-1 bg-none  rounded-md" id="Password" value="" required>
+                    <img src="/images/icon-error.svg" alt="" class="w-[20px] h-[20px]" id="imagePassword">
+                </div>
+                <div>
+                    <p id="passwordError" class="text-xs text-red-500"></p>
+                </div>
+            </div>
+            <button type="submit" class="bg-[#38cc8c] rounded-md text-white text-xs p-3 my-3" id="button">ClAIM YOUR FREE TRIAL</button>
+            <div>
+                <p class="text-[10px] text-[#b9b6d3]">By clicking the button you are accepting to our <span class="text-[#ff7a7a]">term and support</span></p>
+            </div>
+
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
